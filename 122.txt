@@ -1,0 +1,15 @@
+﻿import random
+secret = random.randint(0,10)
+temp = input("有逼本事猜猜我心里想的是哪个数字：")
+guess = int(temp)
+while guess != secret:
+    guess = int(temp)
+    if guess == secret:
+        print("卧槽，厉害呀！")
+    else:
+        if guess > secret:
+            print("大了！傻X")
+        else:
+            print("小了!")
+        temp = input("继续！Try Again：")
+print("游戏结束，不玩啦！哈哈。。。")
